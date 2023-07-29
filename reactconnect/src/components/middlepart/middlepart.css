@@ -1,9 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Raleway&display=swap');
 
-* {
-    overflow-x: hidden;
-    overflow-y: hidden;
-}
 
 .homeHeadingText {
     font-size: 3rem;
@@ -17,6 +14,40 @@
     display: inline-block;
     z-index: 1; /* Ensure the text appears on top */
 }
+  .gradient-button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+
+  .gradient-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+
+  @keyframes glowing {
+    0% {
+      box-shadow: 0 0 10px var(--color1), 0 0 20px var(--color2), 0 0 30px var(--color3);
+    }
+    50% {
+      box-shadow: 0 0 20px var(--color1), 0 0 30px var(--color2), 0 0 40px var(--color3);
+    }
+    100% {
+      box-shadow: 0 0 10px var(--color1), 0 0 20px var(--color2), 0 0 30px var(--color3);
+    }
+  }
+
+  .glow-animation {
+    animation: glowing 2s infinite;
+  }
+
 .detailsContainer {
     display: flex;
     flex-direction: row;
@@ -25,8 +56,12 @@
 }
 
 .paraText {
-    font-size: 16px;
-    
+    font-size: 18px;
+    /* font-weight: 100; */
+    font-family: 'Raleway';
+    width: 400px;
+    text-shadow: 0 0 1px #00ffff, 0 0 2px #00ffff, 0 0 2px #00ffff, 0 0 1px #00ffff;
+    margin-right: 40px;
 }
 
 .homeHeadingText::before,
@@ -46,9 +81,10 @@
 
 .devImage {
     border-radius: 30px;
-    height: 400px;
-    width: 500px;
+    height: 300px;
+    width: 400px;
     transition: 0.4s;
+    margin-right: 20px;
 }
 
 .devImage:hover {
