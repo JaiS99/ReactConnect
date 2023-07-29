@@ -1,8 +1,19 @@
 import React from 'react'
 import './middlepart.css';
 import { useEffect, useState } from 'react';
+import LoginButton from '../login/LoginButton';
+
+import { useAuth0 } from "@auth0/auth0-react";
 
 const MiddlePart = () => {
+
+  const {
+    isAuthenticated,
+    loginWithRedirect,
+  } = useAuth0();
+
+  
+  
 
     const [colors, setColors] = useState({ color1: '', color2: '', color3: '' });
 
@@ -57,8 +68,15 @@ const MiddlePart = () => {
                 <br/>
                 <br/>
                 <br/>
-               
+
+              {!isAuthenticated ? <><LoginButton/></> : <></>}
+              <br/>
+
             </center>
+          <br/>
+
+
+           
         </div>
     </>
   )

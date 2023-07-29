@@ -3,13 +3,7 @@
     margin: 0;
     /* overflow: visible; */
 }
-.createSpaceBtn {
-    padding: 0.8rem;
-    outline: none;
-    border: 1px solid white;
-    margin-left: 10px;
-    border-radius: 5px;
-}
+
 .navbar {
     background-color: #1f1f1f;
     color: white;
