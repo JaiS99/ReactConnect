@@ -2,7 +2,14 @@
 * {
     padding: 0;
     margin: 0;
+    background-color: #1f1f1f;
+    color: white;
+    /* overflow: hid; */
 }
 .headingText {
     font-family: 'Poppins',sans-serif;
+}
+.homeContainer {
+    background-color: #1f1f1f;
+    height: 100%;
 }

@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Poppins:wght@300&display=swap');
+
+* {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.homeHeadingText {
+    font-size: 3rem;
+    text-align: center;
+    color: #fff;
+    padding: 1rem;
+    background: #0d0d0d;
+    box-shadow: 8px 8px 16px #0a0a0a, -8px -8px 16px #161616;
+    border-radius: 16px;
+    position: relative;
+    display: inline-block;
+    z-index: 1; /* Ensure the text appears on top */
+}
+.detailsContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.paraText {
+    font-size: 16px;
+    
+}
+
+.homeHeadingText::before,
+.homeHeadingText::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 16px;
+    background: linear-gradient(45deg, #f06, #9f6, #09f, #f06);
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s ease infinite;
+    z-index: -1; /* Place the pseudo-elements behind the text */
+}
+
+.devImage {
+    border-radius: 30px;
+    height: 400px;
+    width: 500px;
+    transition: 0.4s;
+}
+
+.devImage:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.homeHeadingText::after {
+    filter: blur(8px);
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
