@@ -29,9 +29,15 @@ const CreateSpace = () => {
 
                 <textarea className='textField' placeholder='Description about space.'></textarea> <br/>
 
+                <div className="buttons">
                 <button className='create-space-btn'>
       Create Space
     </button>
+
+    <button className='join-space-btn'>Join Space</button>
+                </div>
+
+              
 
             </div>
 
