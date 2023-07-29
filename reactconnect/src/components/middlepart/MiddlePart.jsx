@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 import LoginButton from '../login/LoginButton';
 import { ApolloProvider } from '@apollo/client';
 import client from '../../apollo';
-import QuestionList from '../questionlist/QuestionList';
+import QuestionList from '../questionlist/NewQuestionList';
 import { useAuth0 } from "@auth0/auth0-react";
 
 const MiddlePart = () => {

@@ -1,11 +1,11 @@
 import { gql } from '@apollo/client';
 
-export const GET_ALL_GITHUB_ISSUES = gql`
-  query GetAllGitHubIssues($query: String!, $limit: Int!) {
-    search(query: $query, type: ISSUE, first: $limit) {
-      edges {
-        node {
-          ... on Issue {
+export const GET_REPO_ISSUES = gql`
+  query GetRepoIssues($owner: String!, $repoName: String!) {
+    repository(owner: $owner, name: $repoName) {
+      issues(first: 100, orderBy: { field: CREATED_AT, direction: DESC }) {
+        edges {
+          node {
             id
             title
             bodyText

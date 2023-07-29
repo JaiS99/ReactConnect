@@ -1,89 +1,60 @@
-.github-card {
-  background-color: #f6f8fa;
-  border: 1px solid #e1e4e8;
-  border-radius: 6px;
-  padding: 16px;
-  margin-bottom: 16px;
+/* CSS */
+.github-issues-list {
+  max-width: 600px;
+  margin: 0 auto;
 }
 
-.questionTile {
-  margin-left: 20px;
-  margin-right: 20px;
+.issue {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
 }
 
-.specialP {
-  margin-left: 0.6rem;
-  margin-right: 0.6rem;
-  margin-bottom: 1rem;
-}
-
-.github-card.expanded {
-  max-height: none;
-  overflow: visible;
-}
-
-.github-card h3 {
-  font-size: 20px;
-  padding: 1rem;
-  margin: 1rem;
-  font-weight: bold;
-  border-radius: 10px;
-  padding-left: 1rem;
-  padding-right: 0.5rem;
-  background: lightgrey;
-  color: black;
-  margin-bottom: 8px;
+.issue-title {
   cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.github-card p {
-  font-size: 16px;
-  background: white;
-  color: black;
-  padding-left: 1rem;
-  padding-right: 0.5rem;
-  border-radius: 4px;
-  background: lightgrey;
-  margin-bottom: 12px;
-}
-
-.github-card.expanded .answer-section {
+.comments-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
   display: block;
 }
 
-.answer-section {
-  margin-top: 16px;
+.githubIssuesHeading {
+  text-align: center;
 }
 
-form {
+
+.comment {
+  margin: 5px 0;
+  padding: 5px;
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+}
+
+.comment-form {
   display: flex;
-  flex-direction: column;
+  margin-top: 10px;
 }
 
-label {
-  margin: 10px;
-  font-size: 16px;
-  font-weight: bold;
+
+.comment-form input {
+  flex: 1;
+  padding: 5px;
 }
 
-textarea {
-  resize: vertical;
-  font-size: 16px;
-  border: 1px solid #e1e4e8;
-  border-radius: 4px;
-  margin-bottom: 8px;
-}
-
-.btn-submit {
-  background-color: #2ea44f;
-  color: white;
+.comment-form button {
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: #fff;
   border: none;
-  border-radius: 6px;
-  padding: 8px 16px;
-  font-size: 16px;
   cursor: pointer;
 }
 
-.btn-submit:hover {
-  background-color: #22863a;
+.comment-form button:hover {
+  background-color: #0056b3;
 }
