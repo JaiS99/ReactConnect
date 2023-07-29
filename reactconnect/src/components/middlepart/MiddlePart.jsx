@@ -69,7 +69,7 @@ const MiddlePart = () => {
                 <br/>
                 <br/>
 
-              {!isAuthenticated ? <><LoginButton/></> : <></>}
+              {isAuthenticated ? <><LoginButton/></> : <></>}
               <br/>
 
             </center>
