@@ -17,9 +17,7 @@ const NavBar = () => {
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="#">Home</a>
-        </li>
+  
         <li class="nav-item">
           <a class="nav-link" href="#">Leaderboard</a>
         </li>
@@ -27,6 +25,11 @@ const NavBar = () => {
         <li class="nav-item">
           <Link to="/blogs" class="nav-link">Blogs</Link>
         </li>
+
+        <li class="nav-item">
+          <Link to="/blogs" class="nav-link">Forums</Link>
+        </li>
+    
         <li class="nav-item">
             <Link to='/create-space'><button className="createSpaceBtn" >Create Space</button>
             </Link>
