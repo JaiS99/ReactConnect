@@ -26,7 +26,7 @@ const CreateSpace = () => {
             <div className="detailsNewContainer">
 
                 <input type='text' placeholder='Space Name' className='textField'/><br/>
-
+                <input type='text' placeholder='Github Repo Link' className='textField'/><br/>
                 <textarea className='textField' placeholder='Description about space.'></textarea> <br/>
 
                 <div className="buttons">
