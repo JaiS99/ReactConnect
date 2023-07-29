@@ -1,5 +1,6 @@
 import React from 'react'
 import './navbar.css';
+import { Link } from 'react-router-dom';
 
 const NavBar = () => {
 
@@ -24,10 +25,11 @@ const NavBar = () => {
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" href="#">Blogs</a>
+          <Link to="/blogs" class="nav-link">Blogs</Link>
         </li>
         <li class="nav-item">
-            <button className="createSpaceBtn" >Create Space</button>
+            <Link to='/create-space'><button className="createSpaceBtn" >Create Space</button>
+            </Link>
         </li>
         
         <div className="spacer"></div>
